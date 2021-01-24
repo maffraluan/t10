@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts */
+
+$jose-font: 'Josefin Sans', sans-serif;
+$mont-font: 'Montserrat', sans-serif;
+
+
+@mixin montFontFamily {
+  font-family: $mont-font;
+}
+
+@mixin joseFontFamily {
+  font-family: $jose-font;
+}
+
+/* Colors: */
+$dark-grey-color: #707070;
+$dark-light-color: #F5F5F5;
+$unnamed-color: #455A64;
+$black-dark-color: #000000;
+$salmon-color: #F97270;
+$light-color: #FFFFFF;
+
+/* Global Variables */
+
+@mixin align-text-h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin h3 {
+  position: relative;
+  left: -10px;
+  top: -6px;
+  font-size: 1.4rem;
+  color: $salmon-color;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+@mixin span {
+  position: absolute;
+  height: 14px;
+  background-color: $salmon-color;
+  opacity: 0.1;
+  border-radius: 9px;
+}
+
+@mixin m-auto-100 {
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+@mixin m-auto-80 {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@mixin d-flex-row-w100-center {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+@mixin d-flex-column-jcenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin button-salmon {
+  @include montFontFamily();
+    width: 164px;
+    height: 52px;
+    margin-top: 20px;
+
+    background-color: $salmon-color;
+    border-radius: 5px;
+    letter-spacing: 0px;
+    opacity: 1;
+
+    border: none;
+    outline: none;
+    
+    color: $light-color;
+    font-weight: 400;
+    cursor: pointer;
+
+      &:hover {
+        transition-duration: 0.4s;
+        -webkit-box-shadow: 1px 7px 14px -1px rgba(249,110,75,0.98); 
+        box-shadow: 1px 7px 14px -1px rgba(249,110,75,0.98);
+      }
+}
