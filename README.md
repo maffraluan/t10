@@ -6,7 +6,6 @@ T10 is a simple landing page.
 
 Use the package manager [yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/) to install T10.
 
-or access it: [T10deployed](https://t10-landingpage.netlify.app/) to see in production mode.
 
 ```bash
 git clone && cd t10 
