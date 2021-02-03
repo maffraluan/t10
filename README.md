@@ -17,7 +17,9 @@ yarn install T10 or npm install to download all the deps.
 ```
 yarn start or npm start to run the project in your localhost 
 
-Runs the app in the development mode.
+or [t10](https://t10landing-page.netlify.app/)
+
+Runs the app in the development mode. 
 Open http://localhost:3000 to view it in the browser.
 
 
